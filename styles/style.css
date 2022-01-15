@@ -126,6 +126,9 @@ Popular Collection
 .product-box > img{
     width: 100%;
 }
+.product-box:hover img {
+    transform: scale(0.97);
+}
 .product-details{
     margin-top: 16px;
 }
