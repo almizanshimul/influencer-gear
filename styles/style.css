@@ -57,10 +57,14 @@ Banner
     padding: 10px 24px;
     background: #E02C6D;
     border-radius: 41px;
-    border: none;
+    border: 2px solid #E02C6D;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
+}
+.btn:hover{
+    background: transparent;
+    color: #E02C6D;
 }
 .banner-content i{
     margin-left: -15px;
@@ -76,7 +80,6 @@ Banner
 }
 .col.bg{
     background:url(../images/banner-col-bg.png) no-repeat center center;
-    background-size: cover;
 }
 
 /* ------------------
@@ -219,7 +222,7 @@ text-align: center;
 
 /* Tablet responsive */
 
-@media only screen and (min-width:689px) and (max-width:992px) {
+@media only screen and (min-width:689px) and (max-width:1024px) {
     section{
         margin: 16px;
     }
