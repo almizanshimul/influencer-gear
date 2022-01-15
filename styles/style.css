@@ -352,7 +352,7 @@ text-align: center;
         justify-content: center;
     }
     .see-more{
-        border: 2px solid #E02C6D;
+        border: 2px solid #E02C6D !important;
         border-radius: 41px;
     }
     #contact .row{
@@ -433,9 +433,8 @@ text-align: center;
         justify-content: center;
     }
     .see-more{
-        border: 2px solid #E02C6D;
+        border: 2px solid #E02C6D !important;
         border-radius: 41px;
-        text-align: center;
     }
     #contact .row{
         flex-direction: column;
