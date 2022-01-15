@@ -64,7 +64,7 @@ Banner
 }
 .banner-content i{
     margin-left: -15px;
-    transition: 1s;
+    transition: 0.7s;
     opacity: 0;
 }
 .btn:hover i{
@@ -160,4 +160,20 @@ Popular Collection
     line-height: 20px;
     letter-spacing: 0.018em;
     color: #787885;
+}
+.all-product-btn{
+    margin: 50px 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.all-product-btn > .see-more{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(224, 44, 109, 0.87);
+    padding: 8px 30px;
+}
+.all-product-btn i{
+    margin-left: 10px;
 }
