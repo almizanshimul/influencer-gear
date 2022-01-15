@@ -76,6 +76,7 @@ Banner
 }
 .col.bg{
     background:url(../images/banner-col-bg.png) no-repeat center center;
+    background-size: cover;
 }
 
 /* ------------------
@@ -210,4 +211,57 @@ text-align: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     margin: 0 5px;
+}
+
+/*---------------
+ Responsive
+--------------- */
+
+
+
+/* Mobile responsive */
+
+@media only screen and (max-width:688px) {
+    section{
+        margin: 16px;
+    }
+    .container{
+        width: 100%;
+    }
+    .row{
+        flex-direction: column-reverse;
+    }
+    .col{
+        width: 100%;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-content h1{
+        font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    }
+    .banner-content i{
+        opacity: 1;
+        margin: 15px;
+    }
+    .col.bg{
+        padding: 25px 0;
+        background-size: cover;
+    }
+    .row.logo-row {
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: none;
+    }
+    .col-logo{
+        padding: 10px;
+    }
+    .product-container{
+        width: 100%;
+    }
+    .product-row{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
