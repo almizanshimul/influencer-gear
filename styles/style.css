@@ -11,7 +11,7 @@
     text-decoration: none;
     /* font-family: 'Open Sans', sans-serif;*/
     font-family: 'Poppins', sans-serif;
-    transition: all 0.7s linear;
+    transition: all 0.7s;
 }
 
 
@@ -191,6 +191,47 @@ Popular Collection
     margin-left: 10px;
 }
 
+/*----------------
+ Contact Us 
+-------------------- */
+
+#contact .row{
+    margin:10px 0 30px 0;
+}
+.col-contact{
+    width: 33.33%;
+}
+#contact > .contact-head{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    color: #3A3A3A;
+    text-align: center;
+}
+.box-contact {
+    color: #0A0826;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    background: #FFFFFF;
+    transition: all 0.3s;
+}
+.box-contact i{
+    font-size: 50px;
+    padding: 10px;
+}
+.box-contact h4{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+}
+.box-contact:hover{
+    background: #0A0826;
+    color: gainsboro;
+}
+
 /* -----------------
 Footer 
 --------------------- */
@@ -271,6 +312,15 @@ text-align: center;
     .product-row{
         grid-template-columns: repeat(2, 1fr);
     }
+    #contact .row{
+        flex-direction: column;
+    }
+    .col-contact{
+        width: 100%;
+    }
+    .box-contact{
+        margin: 10px;
+    }
 }
 
 /* Mobile responsive */
@@ -293,8 +343,9 @@ text-align: center;
     }
     .banner-content h1{
         font-weight: bold;
-    font-size: 28px;
-    line-height: 42px;
+        font-size: 28px;
+        line-height: 42px;
+        border: none;
     }
     .banner-content i{
         opacity: 1;
@@ -317,5 +368,14 @@ text-align: center;
     }
     .product-row{
         grid-template-columns: repeat(1, 1fr);
+    }
+    #contact .row{
+        flex-direction: column;
+    }
+    .col-contact{
+        width: 100%;
+    }
+    .box-contact{
+        margin: 20px 0;
     }
 }
