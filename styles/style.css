@@ -213,6 +213,12 @@ Popular Collection
     line-height: 24px;
     color: rgba(224, 44, 109, 0.87);
     padding: 8px 30px;
+    border-radius: 41px;
+    border: 2px solid;
+    border-color: transparent;
+}
+.all-product-btn > .see-more:hover{
+    border-color: #E02C6D;
 }
 .all-product-btn i{
     margin-left: 10px;
@@ -348,7 +354,6 @@ text-align: center;
     .see-more{
         border: 2px solid #E02C6D;
         border-radius: 41px;
-        text-align: center;
     }
     #contact .row{
         flex-direction: row;
