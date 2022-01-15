@@ -33,6 +33,9 @@ Header
     align-items: center;
     justify-content: space-between;
 }
+.mobile-bar, .mobile-cart{
+    display: none;
+}
 .main-logo p{
     font-weight: bold;
     font-size: 24px;
@@ -56,7 +59,7 @@ Banner
 ------------------ */
 
 .col{
-    width: 48%;git 
+    width: 48%;
 }
 .banner-content h1{
     font-family: 'Poppins', sans-serif;
@@ -300,6 +303,9 @@ text-align: center;
 /* Tablet responsive */
 
 @media only screen and (min-width:689px) and (max-width:1024px) {
+    .header-row{
+        justify-content: space-evenly;
+    }
     section{
         margin: 16px;
     }
@@ -350,6 +356,19 @@ text-align: center;
 /* Mobile responsive */
 
 @media only screen and (max-width:688px) {
+    .header-row{
+        padding: 0 8px;
+    }
+    .mobile-bar, .mobile-cart{
+        display: block;
+    }
+    .mobile-bar i, .mobile-cart i{
+        color: #1B1B1B;
+        font-size: 24px;
+    }
+    header nav{
+        display: none;
+    }
     section{
         margin: 16px;
     }
@@ -374,6 +393,9 @@ text-align: center;
     .banner-content i{
         opacity: 1;
         margin: 15px;
+    }
+    .col .banner-img{
+        width: 90%;
     }
     .col.bg{
         padding: 25px 0;
