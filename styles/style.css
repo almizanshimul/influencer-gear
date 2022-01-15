@@ -217,7 +217,46 @@ text-align: center;
  Responsive
 --------------- */
 
+/* Tablet responsive */
 
+@media only screen and (min-width:689px) and (max-width:992px) {
+    section{
+        margin: 16px;
+    }
+    .container{
+        width: 100%;
+    }
+    .col{
+        width: 50%;
+    }
+    .banner-content h1{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    }
+    .banner-content i{
+        opacity: 1;
+        margin: 15px;
+    }
+    .col.bg{
+        padding: 25px 0;
+        background-size: cover;
+    }
+    .row.logo-row {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .col-logo{
+        padding: 20px;
+        margin: 0 20px;
+    }
+    .product-container{
+        width: 100%;
+    }
+    .product-row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 /* Mobile responsive */
 
